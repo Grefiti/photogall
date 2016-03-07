@@ -1,0 +1,50 @@
+<head>
+     <link rel="stylesheet" href="https://blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
+     <link rel="stylesheet" type="text/css" href="slick.css"/>
+<link rel="stylesheet" type="text/css" href="slick-theme.css"/>
+
+</head>
+  <div class="content">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-sm-8 words">
+          <h2>About Me and my goals</h2>
+          <p>   It wasn’t until my early 20’s that I realized what I really wanted to do in life was photography. I found a job with a commercial photography outfit which did everything; editorial, commercial, advertising, copying, portrait photography. We also made giant prints and offered drymounting and wetmounting services. We worked with line film, continuous tone, and produced half-tones.During these years I took night courses at University where I discovered the artistic side of the craft. What an education!</p>
+        </div>
+        
+        <div class="col-md-6 col-sm-4">
+        <!--JS slde stuff-->
+            <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+          <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+          <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js"></script>
+            <script type="text/javascript">
+          $(function(){
+            $('.your-class').slick({
+              
+            arrows: false,
+              dots: true,
+                infinite: true,
+            speed: 500,
+            fade: true,
+            cssEase: 'linear'
+
+              });
+          });
+
+            </script>
+          <div class="your-class">
+            <div><%= image_tag "about1", :class=> "middle img-rounded"%></div>
+            <div>your content</div>
+            <div>your content</div>
+          </div>
+
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+

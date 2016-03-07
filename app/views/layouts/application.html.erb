@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mattison Photography</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link href='https://fonts.googleapis.com/css?family=Stint+Ultra+Condensed' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Six+Caps' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Rajdhani:700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="css/bootstrap-image-gallery.min.css">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+</head>
+<body>
+<!-- Header and nav bar -->
+	<div class="header">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-5 col-sm-5">
+					<h1>Mattison.Greff</h1>
+				</div>
+				<div class="col-md-7 col-sm-7">
+					<ul class ="pull-right">
+						<li><%= link_to "Home", root_path%></li>
+							<li><a href="/albums/1">Portraits</a></li>
+							<li><a href="/albums/2">Weddings</a></li>
+							<li><a href="/albums/3">Prints and Artistic</a></li>
+						<li><%= link_to "Contact", contact_path%>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+<!--Body -->
+<%= yield %>
+
+
+<!--Scrips for bootstrap and drop down menu -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+<!--Footer-->
+<div class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-2">
+
+				<!--Login stuff-->
+				<div class="login">
+				<% if current_user %> 
+  					<ul>  
+    					<li><%= link_to "Log out", logout_path, method: "delete" %></li> 
+    					<li><%= link_to "Edit Gallery", arts_path%></li>
+  					</ul> 
+				<% else %> 
+  					<ul> 
+    					<li><%= link_to "Login", "/login" %></a></li> 
+    					<li><%= link_to "Signup", 'signup' %></a></li> 
+  					</ul> 
+				<% end %>
+				</div>
+			</div>
+			<div class="col-md-10">
+				<ul class="pull-right">
+					<li><%= link_to image_tag('google-plus.png', :size => '40x40'), "https://www.google.ca" %></li>
+					<li><%= link_to image_tag('instagram.png', :size => '40x40'), "https://www.instagram.com/___moogs/" %></li>
+					<li><%= link_to image_tag('flickr.png', :size => '40x40'), "https://www.flickr.com/photos/morgangreff/" %></li>
+					<li><%= link_to image_tag('twitter.png', :size => '40x40'), "https://www.google.ca" %></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

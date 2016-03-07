@@ -1,0 +1,164 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+ body{
+ 	background-image: url("wallpaper.jpg");
+	font-size: 100%;
+}
+/*Header style*/
+.header h1{
+	font-family: 'Six Caps', sans-serif;
+	color:#404040;
+	font-size: 7em;
+	font-weight: 10%;
+	letter-spacing: 3px;
+}
+
+.header ul{
+	padding-top:35px;
+}
+.header ul li{
+		display: inline;
+		padding:0px 5px 0px 5px;
+}
+.header ul li a{
+	color:#404040;
+	font-family: 'Rajdhani', sans-serif;
+	font-size: 1.7em;
+	text-decoration: none;
+	font-variant: small-caps;
+}
+.header ul li a:hover{
+	color:#737373;
+}
+.header .active{
+	color:#737373;
+}
+
+/*Footer*/
+
+.footer{
+	padding-top: 8em;
+}
+.footer ul li{
+	display:inline;
+	color:white;
+		padding:10px 5px 10px 5px;
+}
+
+.footer ul li a img{
+	width: 30px;
+	height: 30px;
+}
+.footer .login li a{
+	color: #404040;
+}
+.footer .login li a:hover{
+	color: #404040;
+	background-color: transparent;
+	text-decoration: none;
+}
+
+/*Index*/
+.content{
+	padding-top: 6em;
+
+}
+}
+.content .container{
+	background-color: #02589C;	
+	padding: 2em;
+}
+
+.content .words h2{
+	padding-top:3em;
+}
+
+.content .words {
+}
+.content h2{
+	font-family: 'Rajdhani', sans-serif;
+	color:#404040;
+	font-size: 3em;
+	font-weight: 10%;
+	letter-spacing: 3px;
+}
+
+.content p{
+	color:#404040;
+	font-size: 1.5em;
+}
+.content .your-class{
+	position:center;
+}
+
+/*Gallery*/
+  .img-responsive {
+  	padding:.5em;
+    margin-bottom: 20px;
+    position: relative;
+  }
+
+  /*Forms*/
+  .form {
+  text-align:center;
+  margin: 0 auto 10px;
+  padding: 20px 0 10px 0;
+  font-size: 16px;
+  width: 300px;
+}
+
+.new-form{
+	  text-align:left;
+  margin: 0 auto 10px;
+  padding: 20px 0 10px 0;
+  font-size: 16px;
+  width: 300px;
+  color: #black	;
+}
+.new-form .actions{
+	color: black;
+}
+.new-form .gall-select{
+	color: black;
+}
+
+input[type=text],
+input[type=email],
+input[type=password] {
+  color: #666666;
+  width: 100%;
+  border: 1px solid #E6E6E6;
+  border-radius: 0px; 
+  height: 60px;
+  margin: 6px auto;
+  text-indent: 10px;
+}
+
+/*Upload Pages*/
+.gallist{
+	text-align: left;
+	font-size: 2em;
+	color: black;
+
+}
+.artlist a{
+	padding: .7em;
+}
+.artlist:hover{
+	text-decoration: none;
+	text-transform: none;
+}
+

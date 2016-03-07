@@ -1,0 +1,19 @@
+<div class="photos">
+  <div class="container">
+
+    <h1><%= @album.title %></h1>
+    <div class="row">
+      <% @arts.each do |art|%> 
+        <div class="item col-md-4">
+          <div class="img-container">
+            <%= image_tag art.image %>
+          </div>
+          <div class="photo-info">
+            <p><%= art.description %></p> 
+          </div>
+        </div>
+      <% end %> 
+    </div>
+
+  </div>
+</div>

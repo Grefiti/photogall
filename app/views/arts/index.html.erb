@@ -1,0 +1,23 @@
+<p id="notice"><%= notice %></p>
+<div class="gallist">
+<h1>Gallery Listings</h1>
+
+  <div class="row">
+    <% @arts.each do |art| %>
+    <div class= "col-md-4">
+      <ul>
+        <li><%= art.name %></li>
+        <li><%= art.description %></li>
+        <li><%= image_tag art.image.thumb.url %></li>
+        <li><%= link_to 'Show', art %></li>
+        <li><%= link_to 'Edit', edit_art_path(art) %></li>
+        <li><%= link_to 'Destroy', art, method: :delete, data: { confirm: 'Are you sure?' } %></li>
+      </ul>
+      </div>
+    <% end %>
+    </div>
+
+<br>
+
+<%= link_to 'Add to Gallery', new_art_path %>
+</div>
